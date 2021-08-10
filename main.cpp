@@ -74,7 +74,12 @@ public:
          glPushMatrix();
             glRotatef(-30.0, 0, 0, 1);
             glTranslatef(-3.0f, 0, 0.0);
-         glutSolidCube(0.8);
+            glutSolidCube(0.8);
+         glPopMatrix();
+
+         glPushMatrix();
+         glutWireTorus(0.5, 0.5, 30, 30);
+
 
          glPopMatrix();
 
